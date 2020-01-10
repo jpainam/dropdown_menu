@@ -64,6 +64,7 @@ class _DropdownHeaderState extends DropdownState<DropdownHeader> {
                     new Text(
                       getItemLabel(title),
                       style: new TextStyle(
+                        fontSize: 10.0,
                         color: selected ? primaryColor : unselectedColor,
                       ),
                     ),
