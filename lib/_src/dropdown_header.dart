@@ -53,7 +53,7 @@ class _DropdownHeaderState extends DropdownState<DropdownHeader> {
     return new GestureDetector(
       behavior: HitTestBehavior.opaque,
       child: new Padding(
-          padding: new EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 10.0),
+          padding: new EdgeInsets.fromLTRB(0.0, 5.0, 0.0, 5.0),
           child: new DecoratedBox(
               decoration: new BoxDecoration(
                   border: new Border(left: Divider.createBorderSide(context))),
@@ -63,8 +63,9 @@ class _DropdownHeaderState extends DropdownState<DropdownHeader> {
                       children: <Widget>[
                     new Text(
                       getItemLabel(title),
+                      overflow: TextOverflow.clip,
                       style: new TextStyle(
-                        fontSize: 10.0,
+                        fontSize: 12.0,
                         color: selected ? primaryColor : unselectedColor,
                       ),
                     ),
