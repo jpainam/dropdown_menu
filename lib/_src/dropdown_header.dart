@@ -25,11 +25,14 @@ class DropdownHeader extends DropdownWidget {
   /// get label callback
   final GetItemLabel getItemLabel;
 
+  final TextStyle textStyle;
+
   DropdownHeader(
       {@required this.titles,
       this.activeIndex,
       DropdownMenuController controller,
       this.onTap,
+      this.textStyle,
       Key key,
       this.height: 46.0,
       GetItemLabel getItemLabel})
@@ -64,8 +67,7 @@ class _DropdownHeaderState extends DropdownState<DropdownHeader> {
                     new Text(
                       getItemLabel(title),
                       overflow: TextOverflow.clip,
-                      style: new TextStyle(
-                        fontSize: 12.0,
+                      style: widget.textStyle.copyWith(
                         color: selected ? primaryColor : unselectedColor,
                       ),
                     ),
