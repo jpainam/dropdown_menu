@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'dart:ui' as ui show Image, ImageFilter;
-import 'package:dropdown_menu/_src/drapdown_common.dart';
+import './drapdown_common.dart';
 import 'package:flutter/material.dart';
 
 enum DropdownMenuShowHideSwitchStyle {

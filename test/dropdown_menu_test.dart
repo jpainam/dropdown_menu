@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:dropdown_menu/dropdown_menu.dart';
+import './../lib/dropdown_menu.dart';
 
 void main() {
   test('adds one to input values', () {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-import 'package:dropdown_menu/_src/drapdown_common.dart';
+import './drapdown_common.dart';
 
 typedef Widget MenuItemBuilder<T>(BuildContext context, T data, bool selected);
 typedef void MenuItemOnTap<T>(T data, int index);
