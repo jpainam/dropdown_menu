@@ -64,11 +64,14 @@ class _DropdownHeaderState extends DropdownState<DropdownHeader> {
                   child: new Row(
                       mainAxisSize: MainAxisSize.min,
                       children: <Widget>[
-                    new Text(
-                      getItemLabel(title),
-                      overflow: TextOverflow.clip,
-                      style: widget.textStyle.copyWith(
-                        color: selected ? primaryColor : unselectedColor,
+                    Expanded(
+                      child: new Text(
+                        getItemLabel(title),
+                        overflow: TextOverflow.ellipsis,
+                        maxLines: 1,
+                        style: widget.textStyle.copyWith(
+                          color: selected ? primaryColor : unselectedColor,
+                        ),
                       ),
                     ),
                     new Icon(
